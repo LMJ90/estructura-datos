@@ -119,6 +119,8 @@ public class ProyectoConstrucccionGui extends javax.swing.JFrame {
     private void initComponents() {
 
         jTConsultas = new javax.swing.JTabbedPane();
+        jPInicio = new javax.swing.JPanel();
+        jLinicio = new javax.swing.JLabel();
         jPConsulta1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTConsulta1 = new javax.swing.JTable();
@@ -151,6 +153,14 @@ public class ProyectoConstrucccionGui extends javax.swing.JFrame {
 
         jTConsultas.setBackground(new java.awt.Color(204, 204, 255));
         jTConsultas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jPInicio.setLayout(null);
+
+        jLinicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inicio.jpg"))); // NOI18N
+        jPInicio.add(jLinicio);
+        jLinicio.setBounds(0, 0, 690, 420);
+
+        jTConsultas.addTab("", jPInicio);
 
         jPConsulta1.setLayout(new java.awt.BorderLayout());
 
@@ -308,7 +318,7 @@ public class ProyectoConstrucccionGui extends javax.swing.JFrame {
 
         jLImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/construct.jpg"))); // NOI18N
         getContentPane().add(jLImagen);
-        jLImagen.setBounds(710, 310, 166, 190);
+        jLImagen.setBounds(720, 300, 166, 190);
 
         jMOpciones.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jMOpciones.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -379,15 +389,15 @@ public class ProyectoConstrucccionGui extends javax.swing.JFrame {
     }//GEN-LAST:event_jMExitActionPerformed
 
     private void jMConsulta1ActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMConsulta1ActionPerformed1
-        jTConsultas.setSelectedIndex(0);
+        jTConsultas.setSelectedIndex(1);
     }//GEN-LAST:event_jMConsulta1ActionPerformed1
 
     private void jMConsulta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMConsulta2ActionPerformed
-        jTConsultas.setSelectedIndex(1);
+        jTConsultas.setSelectedIndex(2);
     }//GEN-LAST:event_jMConsulta2ActionPerformed
 
     private void jMConsulta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMConsulta3ActionPerformed
-        jTConsultas.setSelectedIndex(2);
+        jTConsultas.setSelectedIndex(3);
     }//GEN-LAST:event_jMConsulta3ActionPerformed
 
     /**
@@ -431,6 +441,7 @@ public class ProyectoConstrucccionGui extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLImagen;
+    private javax.swing.JLabel jLinicio;
     private javax.swing.JMenu jMArchivo;
     private javax.swing.JMenuItem jMConsulta1;
     private javax.swing.JMenuItem jMConsulta2;
@@ -441,6 +452,7 @@ public class ProyectoConstrucccionGui extends javax.swing.JFrame {
     private javax.swing.JPanel jPConsulta1;
     private javax.swing.JPanel jPConsulta2;
     private javax.swing.JPanel jPConsulta3;
+    private javax.swing.JPanel jPInicio;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
