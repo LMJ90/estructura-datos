@@ -14,7 +14,7 @@ import java.sql.SQLException;
  * @author Laura
  */
 public class JDBCUtilities {
-    private static final String DATABASE_LOCATION = "D:\\Mintic\\Programación_Básica\\Semana5\\Reto5\\ProyectosConstruccion.db";
+    private static final String DATABASE_LOCATION = "D:\\Mintic\\estructura-datos\\ProyectosConstruccion.db";
 
     public static Connection getConnection() throws SQLException {
         String url = "jdbc:sqlite:" + DATABASE_LOCATION;
